@@ -4,20 +4,20 @@ programa
 	funcao inicio()
 	{
 		inteiro n1,n2
-		real nF
+		real NotaFinal
 
-		escreva("Insira as notas obtidas no semestre: ")
+		escreva("Insira suas notas nesse semestre: ")
 		leia(n1)
 		leia(n2)
 
 		nF = ((n1+n2)/2)
 
-		escreva("Sua mÈdia È: ",nF,"\n")
+		escreva("Sua m√©dia √©: ",nF,"\n")
 		
-		se(nF >= 6){
-			escreva("VocÍ ta aprovado")
+		se(NotaFinal >= 6){
+			escreva("Voce foi Aprovado")
 		}senao{
-			escreva("Volte no proximo semestre")
+			escreva("Voce n√£o foi Aprovado")
 		}
 		
 	}
