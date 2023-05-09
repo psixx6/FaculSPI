@@ -44,7 +44,7 @@
         }
         .sectabela { color: white; width: 50%; background-color: rgb(2, 19, 255)
         }
-        .tabela{ color: #fff;border: 2px solid rgb(0, 0, 0);" border:"1"
+        .tabela{ color: #fff;border: 2px solid rgb(0, 0, 0);
       }
       .direitos { width: 100%; text-align: center;
       }
@@ -56,6 +56,9 @@
       .sec4 {width: 25%; background-color: rgb(155, 52, 52)}
       .sec5 {width: 25%;background-color: rgb(153, 153, 150)}
       .secpro {width: 50%; color: white; background-color: rgb(50, 1, 97)}
+      .menul{flex-grow:1 }
+      .menul, a{color: #fff; text-decoration: none;  }
+      .ul{ list-style: none; display:flex; justify-content: space-between; background-color: rgb(0, 87, 0); pad}
     
     </style>
     </head>
@@ -67,13 +70,13 @@
           <h3>Tutorial para Iniciantes</h3>
         </header>
 		<nav>
-			<ul style="list-style: none; display:flex; justify-content: space-between; background-color: rgb(0, 87, 0); pad">
-			<li> <INICIO</a></li>
-			<li style="flex-grow:1;"><a href="index.html#html" style="color: #fff; text-decoration: none;">HTML</a></li>
-		  <li style="flex-grow:1;"><a href="index.html#tabela" style="color: #fff; text-decoration: none;">TABELA</a></li>
-      <li style="flex-grow:1;"><a href="index.html#sobre" style="color: #fff; text-decoration: none;">SOBRE</a></li>
-			<li style="flex-grow:1;"><a href="index.html#links" style="color: #fff; text-decoration: none;">LINKS</a></li>
-			<li style="flex-grow:1;"><a href="cadastro.html" style="color: #fff; text-decoration: none;">CONTATO</a></li>
+			<ul class="ul">
+			<li class="menul"><a href="index.html#topo">INICIO</a></li>
+			<li class="menul"><a href="index.html#html" >HTML</a></li>
+		  <li class="menul"><a href="index.html#tabela" >TABELA</a></li>
+      <li class="menul"><a href="index.html#sobre" >SOBRE</a></li>
+			<li class="menul"><a href="index.html#links" >LINKS</a></li>
+			<li class="menul"><a href="cadastro.html" >CONTATO</a></li>
 			
 			</ul>
 		</nav>
@@ -196,9 +199,9 @@
         <section class="sec3">
             <p>Referências</p>
             <ul>
-                <li><a href="https://devporai.com.br" target="blank">Devporai</a></li>
-                <li><a href="https://google.com.br" target="blank">Google</a></li>
-                <li><a href="https://wikipedia.com" target="blank">Wikipedia</a></li>
+                <li><a href="https://devporai.com.br"target="blank">Devporai</a></li>
+                <li><a href="https://google.com.br"target="blank">Google</a></li>
+                <li><a href="https://wikipedia.com"target="blank">Wikipedia</a></li>
             </ul>
         </section>
         <section class="sec4">
@@ -214,7 +217,7 @@
             <ul>
                 <li><a href="https://www.instagram.com">Instagram</a></li>
                 <li><a href="https://www.youtube.com/">Twitter</a></li>
-                <li><a href="https://www.correios.com.br">Correios</a></li>
+                <li><a href="https://github.com/">GitHub</a></li>
             </ul>
         </section>
     </div>
