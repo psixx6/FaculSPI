@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 01
+    </title>
+</head>
+<body>
+    <label for="n1">Nota 1:</label>
+    <input type="number" id="n1">
+    <br>
+    <label for="n2">Nota 2:</label>
+    <input type="number" id="n2">
+    <br>
+    <label for="n3">Nota 3:</label>
+    <input type="number" id="n3">
+    <br>
+    <button onclick="media()">Calcular</button>
+
+<div>
+    Media: 
+    <br>
+    <p id="media"></p>
+</div>
+<div>
+    Situacao: 
+    <br>
+    <p id="situacao"></p>
+</div>
+    <script>
+        function media() {
+            //fazendo as variaveis para pegaar os dados
+            var n1 = parseFloat(document.getElementById("n1").value);
+            var n2 = parseFloat(document.getElementById("n2").value);
+            var n3 = parseFloat(document.getElementById("n3").value);
+
+            //somar as variáveis para calcular a média
+            var m = (n1 + n2 + n3) / 3;
+
+            //exibir a media
+            document.getElementById("media").textContent = m;
+
+            //exibir a situacao de acordo com a nota da media
+            if(m>=7){
+                document.getElementById("situacao").textContent="Aprovado!";
+            }
+            else if(m<7 && m>=5){
+                document.getElementById("situacao").textContent="Final!";
+            }
+            else{
+                document.getElementById("situacao").textContent="Reprovado!";
+            }
+        }
+    </script>
+</body>
+</html>

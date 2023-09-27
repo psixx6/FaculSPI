@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe</title>
+</head>
+<body>
+    <img src="cafe1.jpg">
+    <button onclick="mudaFoto()">Mude a foto</button>
+
+    <script>
+        function mudaFoto() {
+            var foto = document.querySelector("img");
+            if (foto.src.match("cafe1.jpg"))
+                foto.src = "cafe2.jpg";
+            else 
+                foto.src = "cafe1.jpg";
+        }
+    </script>
+</body>
+</html>

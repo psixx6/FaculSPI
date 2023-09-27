@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valido</title>
+</head>
+<body>
+    <label for="num">Digite um numero:</label>
+    <input type="text" id="number">
+    <button onclick="validar()">Validar</button>
+
+    <script>
+        function validar() {
+            var n = document.querySelector("input").value;
+            if (n < 0)
+                alert(n +" É Valido ");
+            else 
+                alert(n +" É Invalido ");
+        }
+    </script>
+</body>
+</html>

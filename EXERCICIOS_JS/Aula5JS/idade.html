@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idade</title>
+</head>
+<body>
+    <!-- Fazer o "verifica(this)" faz com que o metodo vcerifica() utilize o proprio elemento (input do rg e do cpf) como parametro, ativada quando o campo deixa de ser focado, isto eh, quando o mouse clica fora dele, dando a entender que nao eh mais prioridade-->
+
+    
+    <label for="idade">Digite sua idade:</label>
+    <input type="text" id="idade">
+    <button onclick="maior()">Verificar</button>
+
+    <script>
+        function maior() {
+
+            if(document.getElementById("idade").value >= 18) {
+                alert("É de maior");
+            }
+            else {
+                alert("Não é de maior"); 
+            }
+        }
+    </script>
+</body>
+</html>

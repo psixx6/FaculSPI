@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input, textarea {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return validarSenhas()">
+        <h1>Formulário com senha</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" placeholder="Digite seu sobrenome">
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Digite um email valido">
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+        <label for="confirmacao">Confirmar senha:</label>
+        <input type="password" name="confirmarSenha" id="confirmarsenha" placeholder="Digite sua senha novamente" required>
+        <button id="send">Enviar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onload="piramide()"></p>
+    
+    <script>
+        function piramideNumerica(tamanho) {
+        // Definir um loop para iterar sobre as linhas da pirâmide
+        for (let linha = 1; linha <= tamanho; linha++) {
+            let linhaPiramide = ''; // Inicializa uma string vazia para a linha atual
+
+            // Definir um loop para iterar sobre os números da linha
+            for (let numero = 1; numero <= linha; numero++) {
+            linhaPiramide += numero + ' '; // Adiciona o número à linha da pirâmide
+            }
+
+            console.log(linhaPiramide); // Exibe a linha da pirâmide no console
+        }
+        }
+
+        // Chamando a função com um tamanho de pirâmide de 5
+        piramideNumerica(5);
+
+    </script>
+</body>
+</html>

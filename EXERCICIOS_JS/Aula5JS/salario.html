@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idade</title>
+</head>
+<body>
+    <!-- Fazer o "verifica(this)" faz com que o metodo vcerifica() utilize o proprio elemento (input do rg e do cpf) como parametro, ativada quando o campo deixa de ser focado, isto eh, quando o mouse clica fora dele, dando a entender que nao eh mais prioridade-->
+
+    
+    <label for="digite">Digite seu salario:</label>
+    <input type="number" id="salario">
+    <button onclick="calcula()">Calcular valor a receber</button>
+
+    <script>
+        function calcula() {
+            var salario = parseFloat(document.getElementById("salario").value);
+            var grat = salario * 5/100;
+            var imposto = salario * 7/100;
+            alert((salario) + grat - imposto);
+        }
+    </script>
+</body>
+</html>
