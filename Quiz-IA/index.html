@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quiz</title>
+		<link rel="stylesheet" href="C:\Users\autologon\Downloads\PAM\main.css" />
+	</head>
+	<body>
+		<header>
+			<p>Tempo: <span id="timer">60</span></p>
+		</header>
+		<main>
+			<div id="start-screen">
+				<h1>Quiz</h1>
+				<button id="start-btn">Comece</button>
+			</div>
+			<div id="quiz-screen" style="display: none">
+				<div id="prompt">
+					<h1 id="question">Questão</h1>
+					<hr />
+					<ul id="answers"></ul>
+				</div>
+				<div id="feedback" hidden></div>
+			</div>
+			<div id="score-screen" style="display: none">
+				<h1>Pontuação</h1>
+				<hr />
+				<ol id="high-scores"></ol>
+				<hr />
+				<h2>Coloque seu resultado</h2>
+				<form id="score-form">
+					<input
+						type="text"
+						id="initials"
+						placeholder="Iniciar"
+						minlength="1"
+					/>
+					<button type="submit">Enviar</button>
+				</form>
+			</div>
+		</main>
+		<script src="C:\Users\autologon\Downloads\PAM\main.js"></script>
+	</body>
+</html>
